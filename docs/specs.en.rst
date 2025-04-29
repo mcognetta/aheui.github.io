@@ -138,7 +138,7 @@ The ㅁ group:
 * The ㅃ and ㅍ commands ignore the final consonant.
 * As before, in the case that there is an insufficient number of elements in the current storage, no action is performed on the storage and the momentum is reversed before consulting the vowel and updating the position.
 
-The integer value of each final consonant (excluding ㅇ,ㅎ, and no final consonant) is given by the following table:
+The integer value of each final consonant (excluding ㅇ,ㅎ, and no final consonant) is given by the following table, and is based on the number of strokes required to write it:
 
 +----+----+----+----+----+----+----+----+----+----+----+----+
 | ㄱ | ㄴ | ㄷ | ㄹ | ㅁ | ㅂ | ㅅ | ㅈ | ㅊ | ㅋ | ㅌ | ㅍ |
@@ -155,6 +155,7 @@ The integer value of each final consonant (excluding ㅇ,ㅎ, and no final conso
 Note: There is no way to push 1 explicitly, but it is possible by simple arithmetic, such as `반반나` (push 2, push 2, divide) or `밤받타` (push 4, push 3, subtract).
 
 The ㅅ group:
+
 * ㅅ is the storage selection instruction.
     * The current storage is changed to the storage mapped to by the final consonant.
 * ㅆ is storage transfer instruction.
